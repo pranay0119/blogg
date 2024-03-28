@@ -1,0 +1,69 @@
+{% extends 'homepage.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://as2.ftcdn.net/v2/jpg/04/60/71/01/1000_F_460710131_YkD6NsivdyYsHupNvO3Y8MPEwxTAhORh.jpg');
+            background-size: cover;
+            padding: 50px;
+        }
+
+        form {
+            background-color: #8cebe3;
+            border-radius: 40px;
+            padding: 20px;
+            width: 300px;
+            margin: 0 auto;
+            font-weight: bold;
+        }
+
+        h2 {
+            text-align: center;
+            color:#ffffff;
+        }
+
+        label {
+            color: #464646;
+            text-transform: uppercase;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            border: none;
+            border-radius: 10px 10px 10px 10px;
+            border-bottom: 2px solid #c5510d;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            font-weight: bolder;
+            background-color: #ffffff;
+            color: rgb(5, 1, 253);
+            border: none;
+            padding: 15px;
+            text-transform: uppercase;
+            border-radius: 80px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Login Form</h2>
+    <form method="post">
+        <label>Username</label><br>
+        <input type="text" name="username"><br>
+        <label>Password</label><br>
+        <input type="password" name="password"><br>
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>
+{% endblock %}  

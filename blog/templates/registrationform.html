@@ -1,0 +1,88 @@
+{% extends 'homepage.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-image: url('https://img.freepik.com/free-photo/pieces-blue-stationery_23-2148169528.jpg?w=740&t=st=1710828927~exp=1710829527~hmac=c4ddda53e07181651a71e31971b6cd6a57d5b0de1409b789185a212beedbda4c');
+        background-size: cover;
+        padding: 50px;
+
+      }
+
+      form {
+        background-color: #ffffff;
+        border-radius: 40px;
+        padding: 20px;
+        width: 300px;
+        margin: 0 auto;
+        font-weight: bold;
+      }
+
+      h2 {
+        text-align: center;
+        color: #0a0a0a;
+      }
+
+      label {
+        color: #464646;
+        text-transform: uppercase;
+      }
+
+
+
+      input[type="text"], input[type="email"], input[type="password"] {
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid #c5510d;
+        margin-bottom: 20px;
+        padding: 10px;
+      }
+      input[type="date"] {
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid #c5510d;
+        margin-bottom: 20px;
+        padding: 10px;
+        background-color: #e9f1f7; 
+
+      }
+
+      input[type="submit"] {
+        width: 100%;
+        background-color: #4c77af;
+        color: white;
+        border: none;
+        padding: 15px;
+        text-transform: uppercase;
+        border-radius: 30px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h2>Registration Form</h2>
+    <center>
+    <form  method="post">
+      <label >Username</label><br>
+      <input type="text"  name="username"><br>
+      <label >Mobile Number</label><br>
+      <input type="text"  name="mobilenumber" ><br>
+      <label >Email</label><br>
+      <input type="email"  name="email" ><br>
+      <label >Address</label><br>
+      <input type="text"  name="address" ><br>
+      <label >Password</label><br>
+      <input type="password"  name="password" ><br>
+      <button>Submit</button>
+    </form>
+    <center>
+  </body>
+</html>
+{% endblock %}
